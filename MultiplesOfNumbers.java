@@ -44,11 +44,10 @@ public class MultiplesOfNumbers {
 	//Here we are iterating the value i so that it will be multiplied same as the count of upperLimitCount
 
 			/* Logical approach for this is to get the limit values and divide it by multiplier to get number of times 
-			 * loop should be run. Then iterate using a for loop and then multiply the multiplicand and multiplier to get
-			 * product . Later on verification is done to exempt the exempt number's from final output.
-			 * Since i am iterating in an orderly manner i have used collections. reverse to get the decreasing order
-			 
-			 */
+* loop should be run. Then iterate using a for loop and then multiply the multiplicand and multiplier to get product.
+* Later on verification is done to exempt the exempt number's from final output.
+* Since iteration is in an orderly manner used collections.reverse to get the decreasing order.*/
+
 			for(int i=lowerLimitCount;i<=upperLimitCount;i++)
 			{
 				int productofNumber=multiplier*i;
