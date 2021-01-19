@@ -7,15 +7,16 @@ public class Robo {
 			int countOfL = 0,countOfR=0,countOfU=0,countOfD=0;
 		Scanner scannerObject = new Scanner(System.in);
 		System.out.println("Please Enter Robo Path"); //Getting input from the user 
-		System.out.println("valid input must contain any of the four letters -–“L”,”R”,”U”,”D”");
+		System.out.println("valid input must contain any of the four letters -â€“â€œLâ€,â€Râ€,â€Uâ€,â€Dâ€");
 		String path=scannerObject.nextLine().toUpperCase(); // Changing inputs to upper case
 		char[] character=path.toCharArray();
 		//Iterating character array to get the count of character's to check the robo path
 		/*
-		 * Logical approach for this problem is that robo should have travelled equal number of times 
-		 * left, right and up, down. So by calculating number of times the characters have repeated will provide us the
-		 * desired output. I have additionally included a check to determine if we are able to scan valid inputs 
+		 * Logical approach for this problem is that robo should have travelled equal number of times left, right and up, down. 
+		 So by calculating number of times the characters have repeated will provide us the desired output. 
+		 There is an  additional check to determine if we are able to scan valid inputs.
 		 */
+
 
 		for(char c:character) {
 		// Checking for characters other than L,R,U,D and throwing error message if we get any other character
